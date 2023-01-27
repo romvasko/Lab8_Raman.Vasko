@@ -15,8 +15,8 @@ namespace Lab8_.Controllers {
         public IActionResult Task1() {
             ModelData model = new ModelData();
             model._dT = DateTime.Now;
-            model._appEnv = _webHostEnvironment.EnvironmentName;// ???
-            model._appName = _webHostEnvironment.ApplicationName;// ???
+            model._appEnv = _webHostEnvironment.EnvironmentName;
+            model._appName = _webHostEnvironment.ApplicationName; 
             model._appHost = this.Request.Host.Value;
             model._appProtocol = this.Request.Protocol;
             return View(model);
@@ -31,7 +31,7 @@ namespace Lab8_.Controllers {
 
 
         }
-        public IActionResult Task3(string? str1, int? str2, double str3) {
+        public IActionResult Task3(string str1, int str2, double str3) {
             ViewData["str1"] = str1;
             ViewData["str2"] = str2;
             ViewData["str3"] = str3;
