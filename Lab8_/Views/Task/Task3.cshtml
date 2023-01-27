@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2>Name: @ViewData["str1"]</h2>
+    <h2>Age: @ViewData["str2"]</h2>
+    <h2>???: @ViewData["str3"]</h2>
+    <div style="text-align: left">
+    <form asp-controller="Task" asp-action="Task3" method="post">
+          Name:         <input name="str1" /><br />
+          Age:          <input name="str2" /><br />
+          ???(double):  <input name="str3" /><br />
+          <button type="submit">Task3</button>
+      </form> 
+      </div>
+</div>
