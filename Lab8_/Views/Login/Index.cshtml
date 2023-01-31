@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Login Page";
+}
+<h2>@ViewBag.result</h2>
+<div class="text-center">
+    <form>
+          User Name:         <input name="str1" /><br />
+          Password:          <input name="str2" type="password"/><br />
+          <button>Login</button>
+          <button asp-controller="Login" asp-action="Registration">I'm new</button>
+          <button asp-controller="Login" asp-action="GetAllUsers">Get all users</button>
+      </form> 
+</div>

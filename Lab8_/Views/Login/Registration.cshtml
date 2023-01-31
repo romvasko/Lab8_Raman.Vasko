@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div style="text-align: left">
+    <form asp-controller="Login" asp-action="Register" method="post">
+          Name:            <input name="name" /><br />
+          Age:             <input name="age" /><br />
+          E-mail:          <input name="mail" type="email" /><br />
+          Password:       <input name="pass" type="password"/><br />
+          Confirm Password<input name="confPass" type="password"/><br />
+          <button type="submit">Register</button>
+      </form> 
+      </div>
+</div>

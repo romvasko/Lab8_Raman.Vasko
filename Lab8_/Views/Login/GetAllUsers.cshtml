@@ -1,0 +1,13 @@
+﻿@model List<Lab8_.Models.UserModel>
+@{
+    ViewData["Title"] = "Login Page";
+}
+@foreach (var item in Model)
+{
+  <div class="text-center">
+      <p> Name:@item.Name <br>
+          Age:@item.Age <br>
+          Email:@item.Email <br></p> 
+</div>  
+}
+
