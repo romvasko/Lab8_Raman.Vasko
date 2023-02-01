@@ -1,0 +1,23 @@
+﻿@model List<Lab8_.Models.ClothesModel>
+@{
+    ViewData["Title"] = "Login Page";
+}
+<p style="text-align: center;"><h2>Shop</h2></p>
+
+<table border="1" style="border-collapse: collapse; width: 100%;">
+    <tbody>
+        <tr style="border: 1px solid black;">
+         <td style="border: 1px solid black;"> <strong>Name</strong> </td>
+         <td style="border: 1px solid black;"> <strong>Type</strong> </td>
+         <td style="border: 1px solid black;"> <strong>Cost</strong> </td>
+    </tr>
+@foreach (var item in Model)
+{
+    <tr style="border: 1px solid black;">
+         <td style="border: 1px solid black;"> @item.Name </td>
+         <td style="border: 1px solid black;"> @item.Type </td>
+         <td style="border: 1px solid black;"> @item.Cost </td>
+    </tr>
+}
+</tbody>
+</table>

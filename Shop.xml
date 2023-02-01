@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClothesCollectionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Collection>
+    <Item>
+      <Name>first</Name>
+      <Type>T-shirt</Type>
+      <Cost>9999</Cost>
+    </Item>
+    <Item>
+      <Name>1</Name>
+      <Type>1</Type>
+      <Cost>1</Cost>
+    </Item>
+    <Item>
+      <Name>qwe</Name>
+      <Type>1</Type>
+      <Cost>zxcasd</Cost>
+    </Item>
+    <Item>
+      <Name>asfgfdsa</Name>
+      <Type>qweq</Type>
+      <Cost>1234</Cost>
+    </Item>
+  </Collection>
+</ClothesCollectionModel>

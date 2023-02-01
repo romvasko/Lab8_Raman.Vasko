@@ -22,5 +22,12 @@
       <Age>123</Age>
       <Email>askjd@lslsdl.qw</Email>
     </Item>
+    <Item>
+      <Name>зцйщушйщц</Name>
+      <Password>111</Password>
+      <ConfirmPassword>111</ConfirmPassword>
+      <Age>7895</Age>
+      <Email>qowei@klaskdl.vy</Email>
+    </Item>
   </Collection>
 </UserCollectionModel>

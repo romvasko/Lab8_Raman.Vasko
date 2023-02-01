@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div style="text-align: left">
+    <form asp-controller="Shop" asp-action="AddClothes" method="post">
+          Name:            <input name="name" /><br />
+          Type:             <input name="type" /><br />
+          Cost:          <input name="cost" /><br />
+
+          <button type="submit">Add to Shop</button><button asp-controller="Shop" asp-action="GetAllClothes">Get all users</button>
+      </form> 
+      </div>
+</div>

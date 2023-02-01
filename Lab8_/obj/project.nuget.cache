@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WZctrE1RvnynQyQRVuqaHZIgwABAUmGVPc433b2O7jiy4CC1NFFK/AfbK4apqILj8UR1LSP7GXZ3R4UqV13rxQ==",
+  "dgSpecHash": "T9dxpViWHDF4T9GnRTKdOix3zgztPrCvj2JgjYN0tZrU/81HpxZ7quzkILp9Bso8syJD5E1E/yMWZzH1V3vkTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Frankenstein\\source\\repos\\Lab8_\\Lab8_\\Lab8_.csproj",
+  "projectFilePath": "C:\\Users\\Frankenstain\\Source\\Repos\\Lab8_Raman.Vasko\\Lab8_\\Lab8_.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Frankenstein\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\Frankenstain\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }
