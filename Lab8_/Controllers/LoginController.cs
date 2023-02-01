@@ -15,7 +15,7 @@ namespace Lab8_.Controllers {
         public IActionResult Register(string name, int age, string mail, string pass, string confPass) {
             if (pass!=confPass) {
                 ViewBag.result = "confirm password not equal";
-                return View();
+                return View("Index");
             }
             XmlSerializer xmlser = new XmlSerializer(typeof(UserCollectionModel));
             UserCollectionModel model = new UserCollectionModel();
