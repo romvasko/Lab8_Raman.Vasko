@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Frankenstain\\Source\\Repos\\Lab8_Raman.Vasko\\Lab8_\\Lab8_.csproj": {}
+    "C:\\Users\\Frankenstein\\source\\repos\\Lab8_\\Lab8_\\Lab8_.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Frankenstain\\Source\\Repos\\Lab8_Raman.Vasko\\Lab8_\\Lab8_.csproj": {
+    "C:\\Users\\Frankenstein\\source\\repos\\Lab8_\\Lab8_\\Lab8_.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Frankenstain\\Source\\Repos\\Lab8_Raman.Vasko\\Lab8_\\Lab8_.csproj",
+        "projectUniqueName": "C:\\Users\\Frankenstein\\source\\repos\\Lab8_\\Lab8_\\Lab8_.csproj",
         "projectName": "Lab8_",
-        "projectPath": "C:\\Users\\Frankenstain\\Source\\Repos\\Lab8_Raman.Vasko\\Lab8_\\Lab8_.csproj",
-        "packagesPath": "C:\\Users\\Frankenstain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Frankenstain\\Source\\Repos\\Lab8_Raman.Vasko\\Lab8_\\obj\\",
+        "projectPath": "C:\\Users\\Frankenstein\\source\\repos\\Lab8_\\Lab8_\\Lab8_.csproj",
+        "packagesPath": "C:\\Users\\Frankenstein\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Frankenstein\\source\\repos\\Lab8_\\Lab8_\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Frankenstain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Frankenstein\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -67,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

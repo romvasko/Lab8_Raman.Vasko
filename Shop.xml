@@ -2,21 +2,25 @@
 <ClothesCollectionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Collection>
     <Item>
+      <Id>1</Id>
       <Name>first</Name>
       <Type>T-shirt</Type>
       <Cost>9999</Cost>
     </Item>
     <Item>
+      <Id>2</Id>
       <Name>1</Name>
       <Type>1</Type>
       <Cost>1</Cost>
     </Item>
     <Item>
+      <Id>3</Id>
       <Name>qwe</Name>
       <Type>1</Type>
       <Cost>zxcasd</Cost>
     </Item>
     <Item>
+      <Id>4</Id>
       <Name>asfgfdsa</Name>
       <Type>qweq</Type>
       <Cost>1234</Cost>

@@ -4,7 +4,10 @@
 }
 <div class="text-center">
 <h2>@ViewBag.result</h2>
-    <form>
+    <form method="post">
+        ID: <input name="id" /> <br />
+          <button asp-controller="Shop" asp-action="Show" type="submit">Show clothes</button>
+          <button asp-controller="Shop" asp-action="Delete" type="submit">Delete clothes</button>
           <button asp-controller="Shop" asp-action="AddForm">Add clothes</button>
           <button asp-controller="Shop" asp-action="GetAllClothes">Get all clothes</button>
       </form> 
