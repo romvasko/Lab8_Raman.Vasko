@@ -14,15 +14,10 @@ namespace Lab8_.Controllers {
         }
         public IActionResult AddClothes(int id ,string name, string type, string cost) {
             
-            XmlSerializer xmlser = new XmlSerializer(typeof(ClothesCollectionModel));
-
-
             ClothesCollectionModel model = new ClothesCollectionModel();
-            using (Stream serialStream = new FileStream("../Shop.xml", FileMode.Open))
-            {
+            model = Serializer<ClothesCollectionModel>.GetCollection(model, "../Shop.xml");
 
-                model = (ClothesCollectionModel)xmlser.Deserialize(serialStream);
-            }
+            
             var item = new ClothesModel()
             {
                 Id = id,
@@ -31,32 +26,21 @@ namespace Lab8_.Controllers {
                 Type = type,
             };
             model.Collection.Add(item);
-            using (Stream serialStream = new FileStream("../Shop.xml", FileMode.Create))
-            {
-                xmlser.Serialize(serialStream, model);
-            }
+            Serializer<ClothesCollectionModel>.WriteToFile(model, "../Shop.xml");
             ViewBag.result = "added";
             return View("Index");
         }
         public IActionResult GetAllClothes() {
 
-            XmlSerializer xmlser = new XmlSerializer(typeof(ClothesCollectionModel));
             ClothesCollectionModel model = new ClothesCollectionModel();
-            using (Stream serialStream = new FileStream("../Shop.xml", FileMode.Open)) {
+            model = Serializer<ClothesCollectionModel>.GetCollection(model, "../Shop.xml");
 
-                model = (ClothesCollectionModel)xmlser.Deserialize(serialStream);
-            }
-           
             return View(model.Collection);
         }
         public IActionResult Show(int id) {
 
-            XmlSerializer xmlser = new XmlSerializer(typeof(ClothesCollectionModel));
             ClothesCollectionModel model = new ClothesCollectionModel();
-            using (Stream serialStream = new FileStream("../Shop.xml", FileMode.Open)) {
-
-                model = (ClothesCollectionModel)xmlser.Deserialize(serialStream);
-            }
+            model = Serializer<ClothesCollectionModel>.GetCollection(model, "../Shop.xml");
             try {
             return View(model.Collection.First(x => x.Id == id));
             }
@@ -66,18 +50,13 @@ namespace Lab8_.Controllers {
             }
         }
         public IActionResult Delete(int id) {
-
-            XmlSerializer xmlser = new XmlSerializer(typeof(ClothesCollectionModel));
+            
             ClothesCollectionModel model = new ClothesCollectionModel();
-            using (Stream serialStream = new FileStream("../Shop.xml", FileMode.Open)) {
-
-                model = (ClothesCollectionModel)xmlser.Deserialize(serialStream);
-            }
+            model = Serializer<ClothesCollectionModel>.GetCollection(model, "../Shop.xml");
             bool temp = model.Collection.Remove(model.Collection.First(x => x.Id == id));
-            using (Stream serialStream = new FileStream("../Shop.xml", FileMode.Create)) {
-                xmlser.Serialize(serialStream, model);
-            }
-            if ( temp == true) {
+            Serializer<ClothesCollectionModel>.WriteToFile(model, "../Shop.xml");
+
+            if (temp) {
                 ViewBag.result = "deleted";
                 return View("Index");
             }
